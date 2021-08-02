@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="tabs">
+		<button class="expend {{expendSelected?'active':''}}" bindtap="changTab">支出</button>
+		<button class="income {{!expendSelected?'active':''}}" bindtap="changTab">收入</button>
+	</view>
+	<view class="content">
+		<scroll-view scroll-y="true" enable-flex="true" enhanced="true" show-scrollbar="false" class="expend-content" wx:if="{{isShowExpend}}">
+			<view wx:for="{{expendList}}" wx:for-item="item" wx:for-index="index" wx:key="index" data-item="支出" data-name="{{item.name}}" data-image="{{item.image}}" class="item" bindtap="onTapItem">
+				<image mode="widthFix" src="{{item.image}}"></image>
+				<text>{{item.name}}</text>
+			</view>
+		</scroll-view>
+		<scroll-view scroll-y="true" enable-flex="true" enhanced="true" show-scrollbar="false" class="income-content" wx:else>
+			<view wx:for="{{incomeList}}" wx:for-item="item" wx:for-index="index" wx:key="index" data-item="收入" data-name="{{item.name}}" data-image="{{item.image}}" class="item" bindtap="onTapItem">
+				<image mode="widthFix" src="{{item.image}}"></image>
+				<text>{{item.name}}</text>
+			</view>
+		</scroll-view>
+	</view>
+</view>

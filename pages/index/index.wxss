@@ -1,0 +1,42 @@
+/**index.wxss**/
+.tabs {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12rpx 0;
+    border-radius: 20rpx;
+    overflow: hidden;
+}
+.expend,
+.income {
+    flex: 1;
+    font-size: 26rpx;
+    font-weight: normal;
+    border-radius: 0;
+    background-color: #FFCCCC;
+}
+.expend.active,
+.income.active {
+    background-color: #99CCCC;
+    color: #fff;
+}
+.expend-content,
+.income-content {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 35rpx;
+}
+.item image {
+    width: 12vw;
+    margin-bottom: 20rpx;
+}
+

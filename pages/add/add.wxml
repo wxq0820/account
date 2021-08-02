@@ -1,0 +1,51 @@
+<!--pages/add/add.wxml-->
+<view class="container">
+	<view class="wrap">
+		<view class="item-title">
+			<text class="type">类型：{{item}}</text>
+			<text class="type-detail">类目：{{name}}</text>
+		</view>
+		<view class="item-form">
+			<picker mode="date" start="2015-09-01" end="2099-09-01" bindchange="onDateChange">
+				<view class="picker">
+					日期：<text class="date">{{date}}</text>
+				</view>
+			</picker>
+			<label class="remarks">
+				<text>备注：</text>
+				<input bindinput="onInput" maxlength="10" placeholder="请输入备注10字以内"></input>
+			</label>
+			<label class="amount">
+				<text>金额：</text>
+				<text class="num">{{inputNumValue}}</text>
+			</label>
+		</view>
+		<view class="num-tab" bindtap="onTapNum">
+			<view class="row1">
+				<text data-num="7">7</text>
+				<text data-num="8">8</text>
+				<text data-num="9">9</text>
+				<text class="delete" bindtap="onDelete">删除</text>
+			</view>
+			<view class="row2">
+				<view class="row2-num">
+					<view>
+						<text data-num="4">4</text>
+						<text data-num="5">5</text>
+						<text data-num="6">6</text>
+					</view>
+					<view>
+						<text data-num="1">1</text>
+						<text data-num="2">2</text>
+						<text data-num="3">3</text>
+					</view>
+					<view>
+						<text data-num="0" class="zero">0</text>
+						<text data-num="." class="point">.</text>
+					</view>
+				</view>
+				<view class="ok" bindtap="onSubmit">完成</view>
+			</view>
+		</view>
+	</view>
+</view>

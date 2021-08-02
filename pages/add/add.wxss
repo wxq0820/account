@@ -1,0 +1,84 @@
+/* pages/add/add.wxss */
+.wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.item-title {
+    width: 100%;
+    display: flex;
+    padding: 20rpx 30rpx;
+    background-color: #FFFFCC;
+}
+
+.item-title .type,
+.item-title .type-detail {
+    flex: 1;
+}
+
+.item-form {
+    width: 100%;
+}
+
+.item-form .picker {
+    padding: 20rpx 30rpx;
+    background-color: #99CCCC;
+}
+
+.item-form .remarks {
+    display: flex;
+    padding: 20rpx 30rpx;
+    background-color: #FFCCCC;
+}
+
+.item-form .amount {
+    display: flex;
+    padding: 20rpx 30rpx;
+    background-color: #CCFFCC;
+}
+
+.num-tab {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.row1 {
+    display: flex;
+    text-align: center;
+}
+.row1 .delete {
+    border-right: none;
+}
+.row1 text,
+.row2-num view text {
+    flex: 1;
+    padding: 40rpx 0;
+    border-top: 1px solid #99CCCC;
+    border-right: 1px solid #99CCCC;
+}
+
+.row2,
+.row2-num view {
+    display: flex;
+    text-align: center;
+}
+
+.row2-num {
+    flex: 3;
+}
+
+.row2-num view .zero {
+    flex: 2;
+}
+
+.ok {
+    flex: 1;display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99CCCC;
+    color: #fff;
+}

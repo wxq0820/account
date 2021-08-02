@@ -1,0 +1,46 @@
+/* pages/detail/detail.wxss */
+.wrap {
+    width: 100vw;
+}
+.item {
+    background-color: bisque;
+    border-radius: 20rpx;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 15rpx;
+    /* padding: 20rpx; */
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    background-color: #99CCCC;
+    padding: 30rpx 20rpx;
+}
+.total-num text {
+    padding-left: 35rpx;
+}
+.item-detail {
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 20rpx 20rpx;
+    border-top: 1px solid #99CCCC;
+}
+.item-detail image {
+    width: 10%;
+}
+.detail {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20rpx;
+}
+.detail text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.no-item {
+    color: #666;
+    padding: 30rpx;
+}

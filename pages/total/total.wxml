@@ -1,0 +1,22 @@
+<!--pages/total/total.wxml-->
+<view class="container">
+	<view wx:if="{{isShow}}" class="wrap">
+		<view class="panel">
+			<view class="title">
+				<text>本月收入支出比例</text>
+			</view>
+			<view class="pie">
+				<ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ecpie }}"></ec-canvas>
+			</view>
+		</view>
+        <view class="panel">
+			<view class="title">
+				<text>本月每日收支情况</text>
+			</view>
+			<view class="line">
+            <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ecline }}"></ec-canvas>
+            </view>
+		</view>
+	</view>
+    <view wx:else class="no-data">暂无记账记录</view>
+</view>

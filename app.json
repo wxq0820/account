@@ -1,0 +1,42 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/total/total",
+        "pages/detail/detail",
+        "pages/add/add"
+    ],
+    "tabBar": {
+        "color": "#fff",
+        "selectedColor": "#99CCCC",
+        "borderStyle": "black",
+        "backgroundColor": "#FFCCCC",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "./static/jizhang1.png",
+                "selectedIconPath": "./static/jizhang.png",
+                "text": "记账"
+            },
+            {
+                "pagePath": "pages/detail/detail",
+                "iconPath": "./static/mingxi1.png",
+                "selectedIconPath": "./static/mingxi.png",
+                "text": "明细"
+            },
+            {
+                "pagePath": "pages/total/total",
+                "iconPath": "./static/tongji1.png",
+                "selectedIconPath": "./static/tongji.png",
+                "text": "汇总"
+            }
+        ]
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#FFCCCC",
+        "navigationBarTitleText": "青青记账",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

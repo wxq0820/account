@@ -1,0 +1,25 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+	<view wx:if="{{isShowPage}}" class="wrap">
+		<view class="item" wx:for="{{dateList}}" wx:for-item="date" wx:for-index="index" wx:key="index">
+			<view class="title">
+				<view class="date">
+					<text>{{date}}</text>
+				</view>
+				<view class="total-num">
+					<text>收入：{{incomeTotal[date]}}</text>
+					<text>支出：-{{expendTotal[date]}}</text>
+				</view>
+			</view>
+			<view class="item-detail" wx:for="{{listByTime[date]}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+				<image mode="widthFix" src="{{item.image}}"></image>
+				<view class="detail">
+					<text>{{item.item}}：{{item.name}}</text>
+					<text>{{item.inputTextValue}}</text>
+					<text>{{item.inputNumValue}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="no-item" wx:else>暂无记账记录</view>
+</view>

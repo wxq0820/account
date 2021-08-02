@@ -1,0 +1,35 @@
+/* pages/total/total.wxss */
+.wrap {
+    width: 100vw;
+}
+.panel {
+    border-radius: 20rpx;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 15rpx;
+    width: calc(100%-30rpx);
+    border: 1px solid #99CCCC;
+}
+
+.title {
+    padding: 30rpx 20rpx;
+    background-color: #99CCCC;
+}
+
+.pie {
+    width: 100%;
+    height: 30vh;
+}
+.line {
+    width: 100%;
+    height: 80vh;
+}
+ec-canvas {
+    width: 100%;
+    height: 100%;
+}
+.no-data {
+    color: #666;
+    padding: 30rpx;
+}
